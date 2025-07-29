@@ -17,7 +17,7 @@ jobs:
           script: |
 
             # For first deploy
-            cd /var/www/site100.ru/html-templates/universal-html-template
+            cd /var/www/site100.ru/html-templates/universal-html-template/
             git clone https://github.com/site100ru/universal-html-template.git .
             
             # For next deploys
