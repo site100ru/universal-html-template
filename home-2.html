@@ -648,7 +648,7 @@
 								<div class="carousel-item active">
 									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-1');">
 										<div class="single-product-img approximation">
-											<img data-src="img/about-section-img.jpg" class="d-block w-100" loading="lazy" alt="...">
+											<img data-src="img/about-section-img-1.webp" class="d-block w-100" loading="lazy" alt="...">
 											<div class="magnifier"></div>
 										</div>
 									</a>
@@ -656,7 +656,7 @@
 								<div class="carousel-item">
 									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-2');">
 										<div class="single-product-img approximation">
-											<img data-src="img/about-section-img.jpg" class="d-block w-100" loading="lazy" alt="...">
+											<img data-src="img/about-section-img-2.webp" class="d-block w-100" loading="lazy" alt="...">
 											<div class="magnifier"></div>
 										</div>
 									</a>
@@ -664,7 +664,15 @@
 								<div class="carousel-item">
 									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-3');">
 										<div class="single-product-img approximation">
-											<img data-src="img/about-section-img.jpg" class="d-block w-100" loading="lazy" alt="...">
+											<img data-src="img/about-section-img-3.webp" class="d-block w-100" loading="lazy" alt="...">
+											<div class="magnifier"></div>
+										</div>
+									</a>
+								</div>
+								<div class="carousel-item">
+									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-4');">
+										<div class="single-product-img approximation">
+											<img data-src="img/about-section-img-4.webp" class="d-block w-100" loading="lazy" alt="...">
 											<div class="magnifier"></div>
 										</div>
 									</a>
@@ -699,26 +707,34 @@
 					<button id="indAboutSectionGallery-1" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="0" aria-label="Slide 1"></button>
 					<button id="indAboutSectionGallery-2" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
 					<button id="indAboutSectionGallery-3" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button id="indAboutSectionGallery-4" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="3" aria-label="Slide 4"></button>
 				</div>
 				<div class="carousel-inner h-100">
 					<div id="imgAboutSectionGallery-1" class="carousel-item h-100">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
-								<img  data-src="img/about-section-img.jpg"  class="img-fluid lazyload"  loading="lazy" style="max-width: 75vw; max-height: 75vh"  alt="..."/>
+								<img  data-src="img/about-section-img-1.webp"  class="img-fluid lazyload"  loading="lazy" style="max-width: 75vw; max-height: 75vh"  alt="..."/>
 							</div>
 						</div>
 					</div>
 					<div id="imgAboutSectionGallery-2" class="carousel-item h-100">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
-								<img  data-src="img/about-section-img.jpg"  class="img-fluid lazyload"  loading="lazy"  style="max-width: 75vw; max-height: 75vh"  alt="..."/>
+								<img  data-src="img/about-section-img-2.webp"  class="img-fluid lazyload"  loading="lazy"  style="max-width: 75vw; max-height: 75vh"  alt="..."/>
 							</div>
 						</div>
 					</div>
 					<div id="imgAboutSectionGallery-3" class="carousel-item h-100">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
-								<img  data-src="img/about-section-img.jpg" class="img-fluid lazyload" loading="lazy"  style="max-width: 75vw; max-height: 75vh"  alt="..."/>
+								<img  data-src="img/about-section-img-3.webp" class="img-fluid lazyload" loading="lazy"  style="max-width: 75vw; max-height: 75vh"  alt="..."/>
+							</div>
+						</div>
+					</div>
+					<div id="imgAboutSectionGallery-4" class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img  data-src="img/about-section-img-4.webp" class="img-fluid lazyload" loading="lazy"  style="max-width: 75vw; max-height: 75vh"  alt="..."/>
 							</div>
 						</div>
 					</div>
@@ -764,6 +780,10 @@
 					document.getElementById("imgAboutSectionGallery-3").classList.add("active");
 					document.getElementById("indAboutSectionGallery-3").classList.add("active");
 				}
+				if ( image == "imgAboutSectionGallery-4" ) {
+					document.getElementById("imgAboutSectionGallery-4").classList.add("active");
+					document.getElementById("indAboutSectionGallery-4").classList.add("active");
+				}
 
 			} /* Ending gallery opening function */
 
@@ -783,6 +803,8 @@
 				document.getElementById("indAboutSectionGallery-2").classList.remove("active");
 				document.getElementById("imgAboutSectionGallery-3").classList.remove("active");
 				document.getElementById("indAboutSectionGallery-3").classList.remove("active");
+				document.getElementById("imgAboutSectionGallery-4").classList.remove("active");
+				document.getElementById("indAboutSectionGallery-4").classList.remove("active");
 			}
 		</script>
 		<!-- /ABOUT SECTION GALLERY SCRIPT -->
